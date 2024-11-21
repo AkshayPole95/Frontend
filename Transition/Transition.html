@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 10px;
+            display: grid;
+            place-items: center;
+        }
+        body{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .ease{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            transition: width 2s ease, background-color 0.5s ease;
+        }
+        .ease:hover{
+            background-color: red;
+            width: 200px;
+            color: white;
+        }
+        .ease-in{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(43, 156, 226);
+            transition: width 2s ease-in, background-color 0.5s ease-in;
+        }
+        .ease-in:hover{
+            background-color: rgb(60, 255, 0);
+            width: 200px;
+        }
+        .ease-out{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: rgb(242, 39, 205);
+            transition: width 2s ease-out, background-color 0.5s ease-out;
+        }
+        .ease-out:hover{
+            background-color: rgb(51, 237, 120);
+            width: 200px;
+        }
+        .linear{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px 20px 20px 10px;
+            background-color: rgb(39, 242, 100);
+            transition: width 2s linear, background-color 0.5s linear;
+        }
+        .linear:hover{
+            background-color: rgb(237, 206, 51);
+            width: 200px;
+        }
+        
+
+    </style>
+</head>
+<body>
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="linear">linear</div>
+</body>
+</html>

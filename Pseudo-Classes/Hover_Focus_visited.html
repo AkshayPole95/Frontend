@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  bb */
+
+      body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      }
+
+      button{
+        padding: 10px 30px 10px 30px;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+       } 
+
+
+
+      button:hover{
+        background: white;
+        outline: 1px solid red;
+        color: red;
+        border: none;
+        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
+        /* background: linear-gradient(45deg, red, yellow);  */
+        /* transform: rotate(40deg); */
+        /* text-decoration: underline; */
+        /* animation: shake 0.5s ease infinite; */
+        /* animation: pulse 1s infinite; */
+
+      }
+      /* @keyframes shake {
+          0% { transform: translateY(0); }
+          25% { transform: translateY(-10px); }
+          50% { transform: translateY(10px); }
+          75% { transform: translateY(-10px); }
+          100% { transform: translateY(0); }
+      } */
+      /* @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      } */
+
+      button:focus{
+        color: green;
+      }
+      button:visited{
+        color: yellow;
+      }
+
+    </style>
+</head>
+<body>
+    <button>Submit</button>
+</body>
+</html>

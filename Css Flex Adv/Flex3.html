@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+          display: flex;
+        }
+
+        .container div {
+        padding: 20px;
+        background-color: lightcoral;
+        margin: 10px;
+        text-align: center;
+        }
+        
+        .box2 {
+        flex-grow: 2; /* Box 2 will take up twice the space of others */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>      
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  */
+         body{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            gap: 50px;
+         }
+         
+        .LG1{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(180deg, orange, white, green );
+        }
+
+        .LG2{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, red, violet);
+        }
+        .LG3{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to bottom, blue, yellow);
+        }
+        .RG1{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, orange, green );
+        }
+
+        .RG2{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient( ellipse, red, black);
+        }
+        .RG3{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(ellipse closest-side, blue, yellow);
+        }
+        .CG1{
+            width: 200px;
+            height: 200px;
+            background: Conic-gradient(orange, rgb(13, 173, 218), green );
+        }
+
+        .CG2{
+            width: 200px;
+            height: 200px;
+            background: Conic-gradient(red, blue, green);
+        }
+        .CG3{
+            width: 200px;
+            height: 200px;
+            background: Conic-gradient(from 45deg, blue, yellow, red);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="LG1"></div>
+    <div class="LG2"></div>
+    <div class="LG3"></div>
+    <div class="RG1"></div>
+    <div class="RG2"></div>
+    <div class="RG3"></div>
+    <div class="CG1"></div>
+    <div class="CG2"></div>
+    <div class="CG3"></div>
+</body>
+</html>

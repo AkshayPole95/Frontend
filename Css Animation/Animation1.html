@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic CSS Animation</title>
+  <style>
+    /* animation 1 */
+    .box {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      background-color: rgb(226, 12, 12);
+      position: relative;
+        animation-name: move-box;         /*The name of the animation (linked to the keyframes)*/
+        animation-duration: 4s;           /*How long the animation takes to complete*/
+        animation-timing-function: ease ; /*Defines the pacing of the animation (`ease`, `linear`, `ease-in-out`) */
+        animation-iteration-count: 2;     /*How many times the animation should repeat  eg infinite */
+        animation-direction: reverse;     /*Defines the direction of the animation (`normal`,`reverse`,`alternate`) */
+        animation-delay: 1s;              /*Time before the animation starts.*/
+    }
+
+    @keyframes move-box {
+      0% { left: 0; }
+      100% { left: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
